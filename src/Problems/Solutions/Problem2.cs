@@ -24,7 +24,7 @@ public class Problem2
         ListNode? node1 = l1;
         ListNode? node2 = l2;
 
-        while (node1 is not null || node2 is not null || carry != 0)
+        while (node1 is not null || node2 is not null)
         {
             int sum = (node1?.val ?? 0) + (node2?.val ?? 0) + carry;
             carry = 0;
@@ -36,7 +36,7 @@ public class Problem2
                 value = sum % 10;
             }
 
-            var newTail = new ListNode { val = value };
+            var newTail = new ListNode(value);
 
             if (head is null)
                 head = newTail;
@@ -48,6 +48,8 @@ public class Problem2
             node1 = node1?.next;
             node2 = node2?.next;
         }
+
+        if (carry == 1) tail!.next = new ListNode(1);
 
         return head!;
     }

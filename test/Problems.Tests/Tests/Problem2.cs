@@ -36,10 +36,7 @@ public class Problem2Tests
             }
         };
 
-        yield return new Object[]
-        {
-            new Problem2.ListNode { val = 0 }, new Problem2.ListNode { val = 0 }, new Problem2.ListNode { val = 0 }
-        };
+        yield return new Object[] { new Problem2.ListNode(0), new Problem2.ListNode(0), new Problem2.ListNode(0) };
 
         yield return new Object[]
         {
