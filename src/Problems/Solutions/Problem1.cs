@@ -7,11 +7,9 @@ public class Problem1
         for (var i = 0; i < nums.Length; i++)
         {
             var current = nums[i];
-
             for (var j = i + 1; j < nums.Length; j++)
             {
                 var next = nums[j];
-
                 if (current + next == target)
                 {
                     return new[] { i, j };

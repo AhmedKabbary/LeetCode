@@ -24,19 +24,48 @@ public class Problem2Tests
         {
             new Problem2.ListNode
             {
-                val = 2, next = new Problem2.ListNode { val = 4, next = new Problem2.ListNode { val = 3 } }
+                val = 2,
+                next = new Problem2.ListNode
+                {
+                    val = 4,
+                    next = new Problem2.ListNode
+                    {
+                        val = 3
+                    }
+                }
             },
             new Problem2.ListNode
             {
-                val = 5, next = new Problem2.ListNode { val = 6, next = new Problem2.ListNode { val = 4 } }
+                val = 5,
+                next = new Problem2.ListNode
+                {
+                    val = 6,
+                    next = new Problem2.ListNode
+                    {
+                        val = 4
+                    }
+                }
             },
             new Problem2.ListNode
             {
-                val = 7, next = new Problem2.ListNode { val = 0, next = new Problem2.ListNode { val = 8 } }
+                val = 7,
+                next = new Problem2.ListNode
+                {
+                    val = 0,
+                    next = new Problem2.ListNode
+                    {
+                        val = 8
+                    }
+                }
             }
         };
 
-        yield return new Object[] { new Problem2.ListNode(0), new Problem2.ListNode(0), new Problem2.ListNode(0) };
+        yield return new Object[]
+        {
+            new Problem2.ListNode(0),
+            new Problem2.ListNode(0),
+            new Problem2.ListNode(0)
+        };
 
         yield return new Object[]
         {
@@ -49,18 +78,22 @@ public class Problem2Tests
                     next = new Problem2.ListNode
                     {
                         val = 9,
-                        next =
-                            new Problem2.ListNode
+                        next = new Problem2.ListNode
+                        {
+                            val = 9,
+                            next = new Problem2.ListNode
                             {
                                 val = 9,
-                                next =
-                                    new Problem2.ListNode
+                                next = new Problem2.ListNode
+                                {
+                                    val = 9,
+                                    next = new Problem2.ListNode
                                     {
                                         val = 9,
-                                        next =
-                                            new Problem2.ListNode { val = 9, next = new Problem2.ListNode { val = 9 } }
                                     }
+                                }
                             }
+                        }
                     }
                 }
             },
@@ -69,7 +102,15 @@ public class Problem2Tests
                 val = 9,
                 next = new Problem2.ListNode
                 {
-                    val = 9, next = new Problem2.ListNode { val = 9, next = new Problem2.ListNode { val = 9 } }
+                    val = 9,
+                    next = new Problem2.ListNode
+                    {
+                        val = 9,
+                        next = new Problem2.ListNode
+                        {
+                            val = 9
+                        }
+                    }
                 }
             },
             new Problem2.ListNode
@@ -92,7 +133,11 @@ public class Problem2Tests
                                     val = 0,
                                     next = new Problem2.ListNode
                                     {
-                                        val = 0, next = new Problem2.ListNode { val = 1 }
+                                        val = 0,
+                                        next = new Problem2.ListNode
+                                        {
+                                            val = 1,
+                                        }
                                     }
                                 }
                             }

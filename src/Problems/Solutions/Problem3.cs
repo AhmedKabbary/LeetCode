@@ -13,7 +13,6 @@ public class Problem3
         for (; right < s.Length; right++)
         {
             char c = s[right];
-
             bool exists = set.Contains(c);
             if (exists)
             {
@@ -29,7 +28,6 @@ public class Problem3
             }
 
             set.Add(c);
-
             lengthOfLongestSubstring = Math.Max(lengthOfLongestSubstring, (right - left) + 1);
         }
 

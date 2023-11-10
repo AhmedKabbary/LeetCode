@@ -20,18 +20,7 @@ public class Problem4Tests
 
     public static IEnumerable<Object[]> GetData()
     {
-        yield return new Object[]
-        {
-            new[] {1,3},
-            new[] {2},
-            2,
-        };
-        
-        yield return new Object[]
-        {
-            new[] {1,2},
-            new[] {3,4},
-            2.5,
-        };
+        yield return new Object[] { new[] { 1, 3 }, new[] { 2 }, 2 };
+        yield return new Object[] { new[] { 1, 2 }, new[] { 3, 4 }, 2.5 };
     }
 }
